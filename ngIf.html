@@ -1,0 +1,44 @@
+<html>
+
+<head>
+	<title>ngIf</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+
+<body ng-app="">
+	<hr>
+	<h2>ng-hide example</h2>
+	<p>
+		<label for="checkbox">ClickMe</label>
+		<input type="checkbox" ng-model="myhide" ng-init="myhide=false">
+	</p>
+	<div ng-hide="myhide">
+		<h1>Hello</h1>
+		<h2 class="nh-hide">How are you</h2>
+	</div>
+	<hr>
+	<h2>ng-if example</h2>
+	
+	<p>
+		<label for="checkbox">ClickMe</label>
+		<input type="checkbox" ng-model="myVar" ng-init="myVar=true">
+	</p>
+	<div ng-if="myVar">
+		<h1>Hello</h1>
+		<h2>How are you</h2>
+	</div>
+   
+	<hr>
+	<h2>ng-show example</h2>
+	<p>
+		<label for="checkbox">ClickMe</label>
+		<input type="checkbox" ng-model="myShow" ng-init="myShow=true">
+	</p>
+	<div ng-if="myShow">
+		<h1>Hello</h1>
+		<h2>How are you</h2>
+	</div>
+	 
+</body>
+
+</html>
